@@ -73,6 +73,8 @@ alias wwr="cd /mnt/www/nginx/refDesk/"
 alias wwt="cd /mnt/www/nginx/tv-home/"
 alias gam="cd /home/notami/Documents/ArchMerge-Nemesis/"
 alias gcf="cd /home/notami/.config"
+alias catc="cat ~/.scripts/configs"
+alias catf="cat ~/.scripts/folders"
 
 ###############
 # ### ssh ### #
@@ -99,7 +101,7 @@ alias tma="tmux a -t"
 alias tms="tmux list-sessions"
 alias tmks="tmux kill-session -t"
 alias tmrs="tmux source-file ~/.tmux/.tmux.rsync.conf"
-alias restore="~/scripts/tmux-s.sh restore"
+alias restore="~/.scripts/tmux-s.sh restore"
 alias daily="tma daily"
 
 #################
@@ -124,6 +126,7 @@ alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syu'
 # pacaur or pc
 alias pcsyu="pacaur -Syu"
+alias pcsyua="yaourt -Syu --aur --noconfirm"
 # packer or pk
 alias pks="packer -S"
 alias pksn="packer -S --noconfirm --noedit"
@@ -147,7 +150,8 @@ alias mp3con="for t in track{01..21}*.wav; do lame $t; done"
 #####################
 # You Tube Download #
 #####################
-alias ytdla="youtube-dl -x --audio-format mp3 --prefer-ffmpeg "
+alias ytdla="youtube-dl"
+alias ytdlp="youtube-dl -o --proxy socks://10.8.0.1:1080 "
 
 ####################
 # Search arch wiki #

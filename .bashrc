@@ -59,3 +59,4 @@ shopt -s expand_aliases # expand aliases
 neofetch
 EDITOR=vim
 alias config='/usr/bin/git --git-dir=/home/notami/.cfg/ --work-tree=/home/notami'
+source /home/notami/.bash_shortcuts

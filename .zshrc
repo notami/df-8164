@@ -6,6 +6,7 @@ export ZSH=/home/notami/.oh-my-zsh
 # export VISUAL=vim
 # export EDITOR="$VISUAL"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+source ~/.bash_shortcuts
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -75,7 +76,7 @@ autoload -U zmv
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z extract archlinux)
+plugins=(git z extract archlinux globalias)
 
 source $ZSH/oh-my-zsh.sh
 
