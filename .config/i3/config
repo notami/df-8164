@@ -473,7 +473,7 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 # terminal
 bindsym $mod+Return exec --no-startup-id termite;focus
-bindsym control+mod1+t exec --no-startup-id termite; focus
+# bindsym control+mod1+t exec --no-startup-id termite; focus
 
 #System monitor
 bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
@@ -492,7 +492,7 @@ bindsym control+mod1+c exec --no-startup-id catfish;focus
 #rofi theme selector  -- ROFI IS NOT INSTALLED
 #ArchMerge conflict
 #bindsym mod1+r exec rofi-theme-selector
-bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
+bindsym control+mod1+t exec --no-startup-id rofi-theme-selector
 
 #deadbeef or lollypop
 #ArchMerge conflict
@@ -514,9 +514,11 @@ bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser
 #qwerty/azerty conflict with w
 bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser
 bindsym control+mod1+f exec --no-startup-id firefox
+bindsym control+mod1+p exec --no-startup-id qutebrowser
 bindsym control+mod1+k exec --no-startup-id Kodi
 #bindsym control+mod1+v exec --no-startup-id vivaldi-stable
-bindsym control+mod1+g exec --no-startup-id termite -e ranger
+bindsym control+mod1+r exec --no-startup-id termite -e ranger
+bindsym shift+mod1+r exec --no-startup-id termite -e sudo ranger
 bindsym control+mod1+n exec --no-startup-id termite -e neomutt
 
 #bindsym $mod+F2 exec --no-startup-id geany
