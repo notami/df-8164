@@ -53,8 +53,8 @@ alias vm="vim /home/notami/.config/mutt/neomuttrc"
 alias vn="vim /home/notami/.newsboat/config"
 alias vp="vim /home/notami/.vimperatorrc"
 alias vv="vim /home/notami/.vimrc"
-alias vz="vim /home/notami/.zshrc"
-alias vza="vim /home/notami/.oh-my-zsh/custom/alias.zsh"
+alias vz="vim /home/notami/.zshrc ; source home/notami/.zshrc"
+alias vza="vim /home/notami/.oh-my-zsh/custom/alias.zsh ; source ~/.oh-my-zsh/custom/alias.zsh"
 alias vi3="vim /home/notami/.config/i3/config"
 
 ####################
@@ -62,7 +62,13 @@ alias vi3="vim /home/notami/.config/i3/config"
 ####################
 alias mail="neomutt"
 alias rgr="ranger"
+alias srgr="sudo ranger"
 alias music="ncmpcpp"
+alias nb="newsboat"
+alias srr='sr -elvi | less'
+alias pp1="pipes.sh"
+alias pp3="pipes.sh -t 3 -p 3 -f 30"
+alias wall='wal -i ~/.config/variety/Favorites'
 
 ###############
 # ### nav ### #

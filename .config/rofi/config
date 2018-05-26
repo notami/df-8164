@@ -1,1 +1,5 @@
-rofi.theme: /usr/share/rofi/themes//gruvbox-dark-hard.rasi
+# Dark theme.
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+# Light theme.
+# rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
