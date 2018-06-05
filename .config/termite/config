@@ -52,7 +52,7 @@ foreground_bold = #e0e0e0
 cursor          = #e0e0e0
 # backgrpound transparency 20%
 background = rgba(75, 75, 75, 0.8)
-background = #1d1f21
+# background = #1d1f21
 
 # 16 color space
 
