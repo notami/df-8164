@@ -137,6 +137,7 @@ alias pcsyua="yaourt -Syu --aur --noconfirm"
 alias pks="packer -S"
 alias pksn="packer -S --noconfirm --noedit"
 alias pksyu="packer -Syu  --noconfirm --noedit"
+alias ckre="sudo python2.7 ~/.scripts/checkrestart.py"
 alias tvstart="systemctl start teamviewerd.service"
 
 #####################
