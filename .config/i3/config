@@ -539,7 +539,7 @@ bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser
 #qwerty/azerty conflict with w
 bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser
 bindsym control+mod1+f exec --no-startup-id firefox
-bindsym control+mod1+p exec --no-startup-id qutebrowser
+bindsym control+mod1+q exec --no-startup-id qutebrowser
 bindsym control+mod1+k exec --no-startup-id Kodi
 #bindsym control+mod1+v exec --no-startup-id vivaldi-stable
 bindsym control+mod1+r exec --no-startup-id termite -e ranger

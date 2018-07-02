@@ -64,11 +64,13 @@ alias mail="neomutt"
 alias rgr="ranger"
 alias srgr="sudo ranger"
 alias music="ncmpcpp"
+alias clock="ncmpcpp -s clock"
+alias viz="ncmpcpp -s visualizer"
 alias nb="newsboat"
-alias srr='sr -elvi | less'
 alias pp1="pipes.sh"
 alias pp3="pipes.sh -t 3 -p 3 -f 30"
 alias wall='wal -i ~/.config/variety/Favorites'
+alias srr='sr -elvi | less'
 
 ###############
 # ### nav ### #
@@ -87,6 +89,8 @@ alias catf="cat ~/.scripts/folders"
 ###############
 alias ssh.f="ssh notami@freenas.local"
 alias ssh.d="ssh dbsaurer@dbsaurer.com"
+alias ssh.tv="ssh tv-am"
+alias ssh.nid="ssh nid-8164-am"
 
 ####################
 # ### commands ### #
@@ -129,7 +133,7 @@ alias rshome="rsync -aP --exclude-from=/var/tmp/ignorelist -e ssh /home/$USER/ n
 # pacman or pm
 alias pmsyu="sudo pacman -Syu --color=auto"
 alias pacman='sudo pacman --color auto'
-alias update='sudo pacman -Syu'
+alias update='sudo pacman -Syu && echo Update Complete! | figlet'
 # pacaur or pc
 alias pcsyu="pacaur -Syu"
 alias pcsyua="yaourt -Syu --aur --noconfirm"
@@ -137,14 +141,14 @@ alias pcsyua="yaourt -Syu --aur --noconfirm"
 alias pks="packer -S"
 alias pksn="packer -S --noconfirm --noedit"
 alias pksyu="packer -Syu  --noconfirm --noedit"
-alias ckre="sudo python2.7 ~/.scripts/checkrestart.py"
 alias tvstart="systemctl start teamviewerd.service"
+alias ckre="sudo python2.7 ~/.scripts/checkrestart.py"
 
 #####################
 # # show log output #
 #####################
 alias syslog="journalctl -p 3 -xb"
-
+alias pth='echo $PATH | tr ":" "\n" | nl'
 
 ######################
 # CD Rip-MP3 Convert #
@@ -157,7 +161,8 @@ alias mp3con="for t in track{01..21}*.wav; do lame $t; done"
 #####################
 # You Tube Download #
 #####################
-alias ytdla="youtube-dl"
+alias ytdl="youtube-dl -f best"
+alias ytdla="youtube-dl -x --audio-format mp3 --prefer-ffmpg"
 alias ytdlp="youtube-dl -o --proxy socks://10.8.0.1:1080 "
 
 ####################
@@ -186,11 +191,12 @@ alias -g L='| less'
 alias -g M='| most'
 alias -g C='| wc -l'
 alias -g H='| head'
-alias -g T='| tail'
 alias -g W='wal -i ~/.config/variety/Favorites'
+alias -g T='| tail'
 alias -g G='| grep --color=auto'
 alias -g LL="2>&1 | less"
 alias -g CA="2>&1 | cat -A"
 alias -g NE="2> /dev/null"
 alias -g NUL="> /dev/null 2>&1"
+
 
