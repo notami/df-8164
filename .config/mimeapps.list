@@ -4,7 +4,6 @@ application/xml=geany.desktop;
 application/x-shellscript=geany.desktop;
 x-scheme-handler/http=exo-web-browser.desktop
 x-scheme-handler/https=exo-web-browser.desktop
-x-scheme-handler/mailto=exo-mail-reader.desktop
 x-scheme-handler/trash=exo-file-manager.desktop
 inode/directory=exo-file-manager.desktop;
 text/x-matlab=sublime_text_3.desktop;geany.desktop;
