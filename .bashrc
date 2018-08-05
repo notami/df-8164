@@ -34,6 +34,14 @@ alias df='df -h'
 
 alias merge="xrdb -merge ~/.Xresources"
 
+##########################
+# DEFAULT PYTHON VERSION #
+##########################
+
+# changes default python version to 2.xx
+
+# alias python='python2'
+
 # Aliases for software managment
 # pacman or pm
 alias pmsyu="sudo pacman -Syu --color=auto"
@@ -59,4 +67,5 @@ shopt -s expand_aliases # expand aliases
 neofetch
 EDITOR=vim
 alias config='/usr/bin/git --git-dir=/home/notami/.cfg/ --work-tree=/home/notami'
-source /home/notami/.bash_shortcuts
+source /home/notami/.shortcuts
+source ~/.shortcuts

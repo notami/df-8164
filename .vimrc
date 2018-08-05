@@ -125,11 +125,14 @@ autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
+" When shortcut files are updated, renew bash and ranger configs with new material:
+autocmd BufWritePost ~/.scripts/folders,~/.scripts/configs !bash ~/.scripts/shortcuts.sh
+
 " Automatically source .vimrc
-" augroup autosourcing
-"     autocmd!
-"     autocmd BufWritePost .vimrc source %
-" augroup END
+augroup autosourcing
+  autocmd!
+  autocmd BufWritePost .vimrc source %
+augroup END
 
 map <leader>vimrc :tabe ~/.vimrc<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC

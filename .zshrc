@@ -6,7 +6,7 @@ export ZSH=/home/notami/.oh-my-zsh
 # export VISUAL=vim
 # export EDITOR="$VISUAL"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
-source ~/.bash_shortcuts
+source ~/.shortcuts
 export PATH=$PATH:/home/notami/.scripts
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -158,6 +158,13 @@ reply=($(cheat -l | cut -d' ' -f1))
 }
 compctl -K _cmpl_cheat cheat
 
+##########################
+# DEFAULT PYTHON VERSION #
+##########################
+
+# changes default python version to 2.xx
+
+# alias python='python2'
 
 #########
 # PYWAL #

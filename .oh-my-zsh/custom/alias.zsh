@@ -71,6 +71,9 @@ alias pp1="pipes.sh"
 alias pp3="pipes.sh -t 3 -p 3 -f 30"
 alias wall='wal -i ~/.config/variety/Favorites'
 alias srr='sr -elvi | less'
+alias hsw='history | grep --color=auto wal -i'
+alias headphones='nohup python2 /opt/headphones/Headphones.py &'
+alias jackett='nohup mono --debug ~/Downloads/jackett/Jackett/JackettConsole.exe &'
 
 ###############
 # ### nav ### #
@@ -162,8 +165,8 @@ alias mp3con="for t in track{01..21}*.wav; do lame $t; done"
 # You Tube Download #
 #####################
 alias ytdl="youtube-dl -f best"
-alias ytdla="youtube-dl -x --audio-format mp3 --prefer-ffmpg"
-alias ytdlp="youtube-dl -o --proxy socks://10.8.0.1:1080 "
+alias ytdla="youtube-dl -x --audio-format mp3"
+alias ytdlp="youtube-dl -o --proxy socks5://10.8.0.1:1080 "
 
 ####################
 # Search arch wiki #
