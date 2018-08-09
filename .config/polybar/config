@@ -119,7 +119,7 @@ font-2 = NotoMono-Regular: size=11;0
 
 modules-left = i3 xwindow
 modules-center = networkspeedup networkspeeddown
-modules-right = memory2 cpu2 date
+modules-right = wired-network memory2 cpu2 date
 
 separator = |
 
@@ -1282,7 +1282,7 @@ tail = true
 [module/wired-network]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-interface = enp4s0
+interface = enp7s0
 ;interface = enp14s0
 interval = 3.0
 
@@ -1295,14 +1295,15 @@ interval = 3.0
 ;   %downspeed% [wireless+wired]
 ;   %linkspeed% [wired]
 ; Default: %ifname% %local_ip%
-label-connected =  %ifname%
+label-connected =  %local_ip%
 label-disconnected = %ifname% disconnected
 
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.background}
-format-connected-underline = #55aa55
+; format-connected-underline = #55aa55
+format-connected-underline = ${xrdb:color8}
 format-connected-prefix = " "
-format-connected-prefix-foreground = #55aa55
+format-connected-prefix-foreground = ${xrdb:color8}
 format-connected-prefix-background = ${colors.background}
 
 format-disconnected = <label-disconnected>
