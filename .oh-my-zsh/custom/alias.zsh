@@ -1,11 +1,11 @@
-# Set personal aliases, overriding those provided by oh-my-zsh libs,              
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh               
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.            
-# For a full list of active aliases, run `alias`.                                 
-#                                                                                 
-# Example aliases                                                                 
-# alias zshconfig="mate ~/.zshrc"                                                 
-# alias ohmyzsh="mate ~/.oh-my-zsh"                                               
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #######################
 # #fix obvious typo's #
@@ -30,11 +30,11 @@ alias merge="xrdb -merge ~/.Xresources"
 ###################
 # ### general ### #
 ###################
-alias cls="clear" 
+alias cls="clear"
 alias la="ls -alG"
 alias uls="cd /usr/local/share"
 alias l.="ls -A | egrep '^\.'"
-alias xpp="xprop | grep -i 'class'" 
+alias xpp="xprop | grep -i 'class'"
 
 ################################
 # ### config - (git alias) ### #
@@ -60,6 +60,7 @@ alias vi3="vim /home/notami/.config/i3/config"
 ####################
 # Calling All Apps #
 ####################
+alias cat="bat"
 alias mail="neomutt"
 alias rgr="ranger"
 alias srgr="sudo ranger"
@@ -69,11 +70,29 @@ alias viz="ncmpcpp -s visualizer"
 alias nb="newsboat"
 alias pp1="pipes.sh"
 alias pp3="pipes.sh -t 3 -p 3 -f 30"
-alias wall='wal -i ~/.config/variety/Favorites'
+alias wall='wal -i ~/Pictures/favs/'
 alias srr='sr -elvi | less'
 alias hsw='history | grep --color=auto wal -i'
-alias headphones='nohup python2 /opt/headphones/Headphones.py &'
-alias jackett='nohup mono --debug ~/Downloads/jackett/Jackett/JackettConsole.exe &'
+alias du="ncdu --color dark -x --exclude .git --exclude node_modules"
+alias dus="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias mv='/opt/mullvad-vpn/mullvad-vpn &; disown'
+
+################
+# Some aliases #
+################
+alias p="sudo pacman"
+alias SS="sudo systemctl"
+alias v="vim"
+alias sv="sudo vim"
+alias r="ranger"
+alias sr="sudo ranger"
+alias ka="killall"
+alias g="git"
+alias trem="transmission-remote"
+alias mkd="mkdir -pv"
+alias rf="source ~/.zshrc"
+alias ref="shortcuts.sh && source ~/.zshrc" # Refresh shortcuts manually and reload zshrc
+alias pi="bash ~/.larbs/wizard/wizard.sh"
 
 ###############
 # ### nav ### #
@@ -94,12 +113,15 @@ alias ssh.f="ssh notami@freenas.local"
 alias ssh.d="ssh dbsaurer@dbsaurer.com"
 alias ssh.tv="ssh tv-am"
 alias ssh.nid="ssh nid-8164-am"
+alias ssh.kt="ssh nid-kt.local"
 
 ####################
 # ### commands ### #
 ####################
 alias scrimp="scrot -q 85 -d 5 screenshot.png && gimp screenshot.png &"
 alias rebar="pkill -USR1 polybar"
+alias usbbye='udisksctl unmount -b /dev/sdc1'
+alias preview="fzf --preview 'bat --color 'always' {}'"
 
 ##################
 # ### iohyve ### #
@@ -147,6 +169,16 @@ alias pksyu="packer -Syu  --noconfirm --noedit"
 alias tvstart="systemctl start teamviewerd.service"
 alias ckre="sudo python2.7 ~/.scripts/checkrestart.py"
 
+#######################
+# System Maintainence #
+#######################
+alias mw="~/.config/mutt/mutt-wizard.sh"
+alias muttwizard="~/.config/mutt/mutt-wizard.sh"
+alias progs="(pacman -Qet && pacman -Qm) | sort -u" # List programs I've installed
+alias orphans="pacman -Qdt" # List orphan programs
+alias sdn="sudo shutdown now"
+alias psref="gpg-connect-agent RELOADAGENT /bye" # Refresh gpg
+
 #####################
 # # show log output #
 #####################
@@ -166,7 +198,12 @@ alias mp3con="for t in track{01..21}*.wav; do lame $t; done"
 #####################
 alias ytdl="youtube-dl -f best"
 alias ytdla="youtube-dl -x --audio-format mp3"
-alias ytdlp="youtube-dl -o --proxy socks5://10.8.0.1:1080 "
+alias ytdlp="youtube-dl -o --proxy socks://10.8.0.1:1080 "
+
+##############
+# TPB SEARCH #
+##############
+alias tpbs="clear && figlet -c TPB Search && ~/.scripts/tpb"
 
 ####################
 # Search arch wiki #

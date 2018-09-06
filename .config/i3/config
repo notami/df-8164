@@ -543,7 +543,7 @@ bindsym control+mod1+q exec --no-startup-id qutebrowser
 bindsym control+mod1+k exec --no-startup-id Kodi
 #bindsym control+mod1+v exec --no-startup-id vivaldi-stable
 bindsym control+mod1+r exec --no-startup-id termite -e ranger
-bindsym shift+mod1+r exec --no-startup-id termite -e sudo ranger
+bindsym control+mod1+shift+r exec  st -e sudo ranger /
 bindsym control+mod1+n exec --no-startup-id termite -e neomutt
 
 #bindsym $mod+F2 exec --no-startup-id geany
