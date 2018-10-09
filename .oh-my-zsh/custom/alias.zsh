@@ -75,7 +75,8 @@ alias srr='sr -elvi | less'
 alias hsw='history | grep --color=auto wal -i'
 alias du="ncdu --color dark -x --exclude .git --exclude node_modules"
 alias dus="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-alias mv='/opt/mullvad-vpn/mullvad-vpn &; disown'
+alias mlv='/opt/mullvad-vpn/mullvad-vpn &; disown'
+alias wfz='wpg -s $(wpg -l | fzf)'
 
 ################
 # Some aliases #

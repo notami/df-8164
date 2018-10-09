@@ -140,7 +140,7 @@ bindsym $mod+F11 exec --no-startup-id rofi -show run -fullscreen -font "Noto San
 # start rofi small  -- ROFI IS NOT INSTALLED
 bindsym Ctrl+Shift+space exec --no-startup-id rofi -show run -font "Noto Sans 13"
 
-
+bindsym Ctrl+Shift+m exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 #####################################################################################################################
 #################                          how to exit, logoff, suspend, ...                        #################
@@ -410,7 +410,8 @@ font pango:Noto Mono Regular 13
 #exec --no-startup-id spotify
 #for_window [class="Spotify"] focus
 
-
+# Greenclip
+exec --no-startup-id greenclip daemon &
 
 # TRAY APPLICATIONS
 
