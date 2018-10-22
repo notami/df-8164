@@ -19,3 +19,13 @@ source .zshrc
 cls
 echo $SHELL
 which zsh
+update
+alias
+vza
+vim
+vim .vimrc
+vim .zshrc
+which zsh
+chsh -h
+chsh -s /bin/zsh notami
+sudo logout

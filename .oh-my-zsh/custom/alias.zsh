@@ -77,6 +77,8 @@ alias du="ncdu --color dark -x --exclude .git --exclude node_modules"
 alias dus="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias mlv='/opt/mullvad-vpn/mullvad-vpn &; disown'
 alias wfz='wpg -s $(wpg -l | fzf)'
+alias rclip="rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
+alias fclip="fzf-greenclip"
 
 ################
 # Some aliases #
@@ -94,6 +96,7 @@ alias mkd="mkdir -pv"
 alias rf="source ~/.zshrc"
 alias ref="shortcuts.sh && source ~/.zshrc" # Refresh shortcuts manually and reload zshrc
 alias pi="bash ~/.larbs/wizard/wizard.sh"
+alias upd-grub "sudo grub-mkconfig -o /boot/grub/grub.cfg" 
 
 ###############
 # ### nav ### #

@@ -411,7 +411,10 @@ font pango:Noto Mono Regular 13
 #for_window [class="Spotify"] focus
 
 # Greenclip
-exec --no-startup-id greenclip daemon &
+exec --no-startup-id nohup greenclip daemon > /dev/null 2>&1 &
+
+# Pywal
+exec --no-startup-id wal -R
 
 # TRAY APPLICATIONS
 
@@ -543,8 +546,8 @@ bindsym control+mod1+f exec --no-startup-id firefox
 bindsym control+mod1+q exec --no-startup-id qutebrowser
 bindsym control+mod1+k exec --no-startup-id Kodi
 #bindsym control+mod1+v exec --no-startup-id vivaldi-stable
-bindsym control+mod1+r exec --no-startup-id termite -e ranger
-bindsym control+mod1+shift+r exec  st -e sudo ranger /
+bindsym control+mod1+r exec --no-startup-id termite -e "zsh -ic ranger"
+bindsym control+mod1+shift+r exec  --no-startup-id termite -e "zsh -ic sudo ranger"
 bindsym control+mod1+n exec --no-startup-id termite -e neomutt
 
 #bindsym $mod+F2 exec --no-startup-id geany

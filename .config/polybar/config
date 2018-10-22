@@ -39,10 +39,18 @@ format-margin =
 format-offset =
 
 [colors]
+; wal theme==============
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+
 ; Nord theme ============
-background = #2F343F
-foreground = #f3f4f5
-alert = #d08770
+;background = #2F343F
+;foreground = #f3f4f5
+;alert = #d08770
 volume-min = #a3be8c
 volume-med = #ebcb8b
 volume-max = #bf616a
@@ -800,8 +808,8 @@ date-alt = " %d-%m-%Y"
 time = %l:%M
 time-alt = %H:%M
 format-prefix = " "
-format-prefix-foreground = ${xrdb:color8}
-format-underline = ${xrdb:color8}
+format-prefix-foreground = ${xrdb:color1}
+format-underline = ${xrdb:color1}
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label = %date% %time%
@@ -995,10 +1003,10 @@ label = %percentage_used%%
 
 format = Mem <label>
 format-prefix = "  "
-format-prefix-foreground = #3384d0
-format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+format-prefix-foreground = ${xrdb:color2}                                                                                                                              
+format-underline = ${xrdb:color2}
 ################################################################################
 
 [module/memory3]
